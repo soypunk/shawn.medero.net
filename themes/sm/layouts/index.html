@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ range where .Data.Pages "Title" "Home" }}
+  {{ .Render "single-post-only" }}
+{{ end }}
+
+<section>
+<h2 id="blog-list-header">Blog Posts</h2>
+<ul>
+{{ range first 15 (where .Data.Pages "Section" "blog") }}
+	{{ .Render "li" }}
+{{ end }}
+</ul>
+<!--<p><a href="/blog/">&raquo; All Blog Posts</a></p>-->
+</section>
+
+{{ partial "footer.html" . }}

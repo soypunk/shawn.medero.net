@@ -1,0 +1,6 @@
+author = "Shawn Medero"
+description = "shawn.medero.net minimal blog-aware theme"
+license = "MIT"
+name = "sm"
+source_repo = ""
+tags = ["personal", "basic"]

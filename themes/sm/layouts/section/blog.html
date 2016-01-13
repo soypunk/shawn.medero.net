@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<article>
+<h1>Blog Posts</h1>
+<ul>
+{{ range .Data.Pages }}
+	{{ .Render "li" }}
+{{ end }}
+</ul>
+</article>
+{{ partial "footer.html" . }}

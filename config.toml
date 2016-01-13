@@ -1,0 +1,15 @@
+baseurl = "http://shawn.medero.net"
+languageCode = "en-us"
+title = "shawn.medero.net"
+canonifyurls = false
+theme = "sm"
+PluralizeListTitles = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  blogSubtitle = "A panoply of dulcet thoughts."
+  description = "Shawn Medero's personal website and blog."
+  author = "Shawn Medero"
