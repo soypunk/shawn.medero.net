@@ -14,7 +14,7 @@ margin:3em 1.5em;
 padding: 0;    
 color: #464646;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue';
 }
 h1 {
@@ -24,6 +24,9 @@ h2 {
 font-size: 1.25em;
 }
 h3 {
+font-size: 1.125em;
+}
+h4 {
 font-size: 1em;
 }
 ul, ol, p {
@@ -33,7 +36,7 @@ p, li {
 font-size: 1em;
 }
 h1 {
-margin-bottom: 0;
+margin-bottom:.75em;
 line-height: 0;
 }
 /*
@@ -52,9 +55,6 @@ box-shadow: 0 0 6px rgba(0,0,0,0.5);
 margin-bottom:1em;
 color:#666;
 font-size: 0.85em;
-}
-h1 {
-margin-bottom:.75em;
 }
 .p-contact > .photo {
 width:135px;
@@ -76,7 +76,7 @@ font-size: 0.95em;
 .summarized .p-experience .p-org {
 font-size: 1em;
 }
-.p-experience h3, .p-experience p {
+.p-experience h4, .h-event p {
 margin-top: 0;
 margin-bottom: 0;
 }
@@ -84,9 +84,9 @@ margin-bottom: 0;
 margin-bottom: 1em;
 }
 .p-org {
-font-style:italic;
+/* font-style:italic; */
 }
-.p-org, .datetime {
+.datetime {
 font-size: 0.85em;
 }
 .datetime {
@@ -173,49 +173,136 @@ a[href^="#"]::after { font-size: 0.6em; vertical-align: super; padding: 0 0.15em
 
 <div class="p-summary">
 	<p>
-	I'm a passionate technical product management leader with 18 years of experience in building, designing, and launching products. I work closely with executive decision-makers to take new ideas and ship the best product. I want to deeply understand the whys of the product, as well as the potential users, and then help translate those to a cross-functional team that is design-driven.</p>
+	I'm a passionate technical product management leader with 18 years of experience in building, designing, and launching software products. I work closely with executive decision-makers to take new ideas and ship the best product. I want to deeply understand the whys of the product, as well as the potential users, and then help translate those to a cross-functional team that thrives on a design-driven culture.</p>
 </div>
 
-<h2>Relevant Work Experience</h2>
+<h2>Work Experience</h2>
+
+<section class="p-experience">
+	<h3><a class="p-name p-org u-url" href="http://research.uw.edu/">Office of Research Information Services (ORIS), University of Washington</a></h3>
+	<p>ORIS builds research administration products and services that enables researchers to do more research by spending less time dealing with administrative overhead while making the university the best place in the world to do cutting-edge research.</p>
+	<p>Since 2011 I've sat on the executive leadership team and contribute to the development of our overall business, technical and partnering strategies. Together, we manage a department of 50+ employees.</p>	
+	<ol>
+		<li class="h-event">
+			<h4 class="p-title">Solutions Architect</h4>
+			<p class="datetime">
+				<time class="dt-start" datetime="2015-03-19">March 2015</time> – Present
+			</p>
+			<div class="p-description">
+			<ul class="p-description">
+				<li>Senior architect for foundational and platform technology solutions</li>
+				<li>Product manager for Research Portal initiative</li>
+				<li>Ad-hoc analyst for identity and access management, security, user experience, and software solutions</li>
+				<li>Mentor and coach for junior staff</li>
+			</ul>	
+		</li>		
+		<li class="h-event">
+			<h4 class="p-title">Interim Program Management Lead</h4>
+			<p class="datetime">
+				<time class="dt-start" datetime="2014-05-23">May 2014</time> – <time class="dt-end" datetime="2015-03-19">March 2015</time>
+			</p>
+			<ul class="p-description">
+				<li>Team lead for a four-member program management group responsible for strategic programs and major projects</li>
+			</ul>
+		</li>	
+		<li class="h-event">
+			<h4 class="p-title">Platform and User Experience Program Lead</h4>
+			<p class="datetime">
+				<time class="dt-start" datetime="2011-10-01">October 2011</time> – <time class="dt-end" datetime="2015-03-19">March 2015</time>
+			</p>
+			<ul class="p-description">
+				<li>Team lead for a six-member user experience service team that I built from the ground-up</li>
+				<li>Architect for application, identity and foundational solutions for our Researcher Portal initiatives</li>
+				<li>Assigned as product manager for a stagnated portal product that needed clarity of vision and a development cadence to begin delivering value</li>
+			</ul>	
+		</li>		
+		<li class="h-event">		
+			<h4 class="p-titile">Senior Computing Specialist</h4>
+			<p class="datetime">
+				<time class="dt-start" datetime="2009-06">June 2009</time> - <time class="dt-end" datetime="2011-02">February&nbsp;2011</time>
+			</p>
+			<ul class="p-description">
+				<li>Developer and architect for content management systems, web applications and web services.</li>
+			</ul>
+		</li>
+	</ol>
+</section>
+
+<section class="p-experience summarized"">
+	<h3><a class="p-name p-org u-url" href="http://serialssolutions.com">SerialSolutions (Summon)</a></h3>
+	<p>Summon is a web-scale discovery service for libraries that provides a comprehensive unified index and relevant, easily refined results of your library's collection. The Summon product was acquired by SerialSolutions.
+	</p>
+	<div class="h-event">
+		<h4 class="p-titile">Search Engineering Consultant</h4>
+		<p class="datetime"><time class="dt-start" datetime="2011-02">February 2011</time> - <time class="dt-start" datetime="2011-09">September&nbsp;2011</time></p>
+		<ul class="p-description">
+			<li>Developer and designer for internal annotation software tools</li>
+			<li>Developer and designer for internal search relevancy customization tools</li>
+			<li>Developer for search relevancy quality assurance test suites</li>
+		</ul>
+	</div>	
+</section>
+
+<section class="p-experience summarized"">
+	<h3><span class="p-name p-org u-url">Meredith Corporation (Healia)</span></h3>
+	<p>Healia was a web-scale search engine for consumers to discover relevant health content to help them easily research complex health topics and find peer discussion groups. Healia was acquired by the Meredith Corporation.</p>
+	<div class="h-event">
+		<h4 class="p-titile">Senior Software Engineer</h4>
+		<p class="datetime"><time class="dt-start" datetime="2008-01">January 2008</time> - <time class="dt-end" datetime="2009-03">March&nbsp;2009</time></p>
+		<ul class="p-description">
+			<li>Lead front-end developer and product designer for the Heaila search user interface</li>
+			<li class="p-description">Developer for search APIs</li>
+		</ul>
+	</div>	
+</section>
+
+<section class="p-experience summarized">
+	<h3><a class="p-name p-org u-url" href="https://www.ldc.upenn.edu">Linguistic Data Consortium (LDC), University of Pennsylvania</a></h3>
+	<p>The Linguistic Data Consortium (LDC) is an open consortium of universities, libraries, corporations and government research laboratories. LDC creates and distributes a wide array of language resources that support sponsored research programs and language-based technology evaluations as well as providing resources and contributing organizational expertise.</p>
+	<div class="h-event">
+		<h4 class="p-titile">Software Engineer</h4>
+		<p class="datetime"><time class="dt-start" datetime="2005-02">February 2005</time> - <time class="dt-end" datetime="2008-01">January&nbsp;2008</time></p>
+		<ul class="p-description">
+			<li>Product designer and lead developer for the LDC News Search service</li>
+			<li>Product designer and lead developer for the Modern-Standard Arabic & Nahuatl Reading Assessment Tool</li>
+			<li>Developer for internal linguistic annotation user interfaces, text processing services, and workflow systems</li>
+		</div>
+	</div>	
+</section>
+
+<section class="p-experience summarized">
+	<h3><a class="p-name p-org u-url" href="http://www.haygroup.com">Hay Group</a></h3>
+	<p>Hay Group is a global management consulting firm specializes in providing data-driven people and technology solutions to transform organizations.</p>
+	<div class="h-event">
+		<h4 class="p-titile">Senior Webmaster</h4>
+		<p class="datetime"><time class="dt-start" datetime="2000-07">July 2000</time> - <time class="dt-end" datetime="2004-11">November&nbsp;2004</time></p>
+		<ul class="p-description">
+			<li>Product designer for main corporate web presence, regional country web presences, conference and special event websites</li>
+			<li>Product designer and developer for employee assessment tools</li>
+			<li>Developer for content management systems and web-based employee survey applications</li>
+			<li>Systems administrator for web servers, firewalls, and load-balancers</li>			
+		</div>
+	</div>	
+</section>
+
+<section class="p-experience summarized">
+	<h3><span class="p-name p-org">Knowledge View, Inc.</span></h3>
+	<p>Knowledge View, Inc. was a startup delivering online video-based learning and training for computer software products.</p>
+	<div class="h-event">
+		<h4 class="p-titile">Senior Systems Administrator</h4>
+		<p class="datetime"><time class="dt-start" datetime="1997-07">July 1997</time> - <time class="dt-end" datetime="2000-07">July&nbsp;2000</time></p>
+		<ul class="p-description">
+			<li>Systems team lead for technical support staff</li>		
+			<li>Lead developer for company intranet</li>
+			<li>Developer for web applications and database tools</li>
+			<li>Systems administrator for web servers, firewalls, and load-balancers</li>
+		</div>
+	</div>	
+</section>
+
+<h2>Other Noteworthy Experience</h2>
 
 <ol>
-	<li class="p-experience h-event">
-		<h3 class="p-title">Solutions Architect</h3>
-		<p><a class="p-name p-org u-url" href="http://research.uw.edu/">Office of Research Information Services (ORIS), University of Washington</a></p>
-        <p class="datetime">
-            <time class="dt-start" datetime="2015-03-19">March 2015</time> – Present
-        </p>		
-        <div class="p-description">
-        	<p>I architect technology solutions that will lead to the next generation of research administration capabilities by enabling researchers to do more research and spend less time dealing with administrative overhead. In addition I also serve as the product manager for our Researcher Portal initiatives.</p>
-			<p>I enjoy mentoring and guiding our product delivery teams in the areas of identity architecture, security solutions, software engineering, and user experience for complex customer-facing applications.</p>
-        	<p>I also sit on the executive leadership team and contribute to the development of our overall business, technical and partnering strategies. Together, we manage a department of 50 employees who are passionate about making the university the best place in the world to do cutting-edge research.</p>
-        </div>
-	</li>
-	<li class="p-experience h-event">
-		<h3 class="p-title">Interim Program Management Lead</h3>
-		<p><a class="p-name p-org u-url" href="http://research.uw.edu/">Office of Research Information Services (ORIS), University of Washington</a></p>
-        <p class="datetime">
-            <time class="dt-start" datetime="2014-05-23">May 2014</time> – <time class="dt-end" datetime="2015-03-19">March 2015</time>
-        </p>		
-        <div class="p-description">
-        	<p>I led a team of four program managers who were responsible for strategic programs and major projects at ORIS. We analyzed business needs to develop strategic roadmaps and project plans primarily for enterprise software products. We also managed agile teams to ensure delivery on our objectives. In addition I managed relationships with our business partners, led working groups, helped partners with organizational strategy, and assisted with communication planning.</p>
-        </div>
-	</li>
-	<li class="p-experience h-event">
-		<h3 class="p-title">Platform and User Experience Program Lead</h3>
-		<p><a class="p-name p-org u-url" href="http://research.uw.edu/">Office of Research Information Services (ORIS), University of Washington</a></p>
-        <p class="datetime">
-            <time class="dt-start" datetime="2011-10-01">October 2011</time> – <time class="dt-end" datetime="2015-03-19">March 2015</time>
-        </p>
-        <div class="p-description">
-        	<p>I built and managed a user experience service team from the ground up that grew to six team members. I also architected application, identity, and platform solutions. I connected the dots between architecture, business and user needs to create and manage products that made research administration easier, better and faster for the campus community. I was assigned as a product manager for a previously struggling portal project and helped deliver the first phases of work to campus by providing clarity of vision to the product team.</p>
-		</div>
-	</li>
-</ol>
-
-<h2>Other Work Experience</h2>
-
-<ol class="summarized">
 	<li class="p-experience h-event">
 		<h3 class="p-title">Public Invited Expert</h3>
 		<p><a class="p-name p-org u-url" href="http://www.w3.org/html/wg/">HTML Working Group, World Wide Web Foundation</a></p>
@@ -235,28 +322,6 @@ a[href^="#"]::after { font-size: 0.6em; vertical-align: super; padding: 0 0.15em
 				</footer>
 			</blockquote>
 	</li>
-	<li class="p-experience h-event"><p><a class="p-name p-org u-url" href="http://serialssolutions.com">SerialsSolutions</a>, Search Engineering Consultant, <time class="dt-start" datetime="2011-02">February 2011</time> - <time class="dt-start" datetime="2011-09">September&nbsp;2011</time></p>
-	<p class="p-description">Internal tool development to improve search relevancy and quality.</p>
-	</li>
-	<li class="p-experience h-event"><p><a class="p-name p-org u-url" href="http://research.uw.edu/">Office of Research Information Services, University of Washington</a>, Senior Computing Specialist, <time class="dt-start" datetime="2009-06">June 2009</time> - <time class="dt-end" datetime="2011-02">February&nbsp;2011</time></p>
-	<p class="p-description">Developer and architect for content management systems, web applications and web services.</p>
-	</li>
-	<li class="p-experience h-event"><p><span class="p-name p-org">Healia</span>, Seattle, WA, Senior Software Engineer, <time class="dt-start" datetime="2008-01">January 2008</time> - <time class="dt-end" datetime="2009-03">March&nbsp;2009</time></p>
-	<p class="p-description">Lead developer for search application web user interfaces.</p>
-	</li>
-	<li class="p-experience h-event"><p><a class="p-name p-org u-url" href="https://www.ldc.upenn.edu">Linguistic Data Consortium (LDC), University of Pennsylvania</a>, Software Engineer, <time class="dt-start" datetime="2005-02">February 2005</time> - <time class="dt-end" datetime="2008-01">January&nbsp;2008</time></p>
-	<p class="p-description">Developer for linguistic annotation user interfaces, text processing services, and workflow systems.</p>
-	</li>
-	<li class="p-experience h-event"><p><a class="p-name p-org u-url" href="http://www.haygroup.com">Hay Group</a>, Senior Webmaster, <time class="dt-start" datetime="2000-07">July 2000</time> - <time class="dt-end" datetime="2004-11">November&nbsp;2004</time></p>
-	<p class="p-description">Systems administrator for web servers, firewalls, and load-balancers. Developer for content management systems and web-based employee survey applications.</p>
-	</li>
-	<li class="p-experience h-event"><p><span class="p-name p-org">Knowledge View, Inc.</span>, Senior Systems Administrator, <time class="dt-start" datetime="1997-07">July 1997</time> - <time class="dt-end" datetime="2000-07">July&nbsp;2000</time></p>
-	<p class="p-description">Systems team lead for technical support staff. Systems administrator for web servers, firewalls, and load-balancers. Developer for web applications and database tools.</p>
-	</li>
-</ol>
-
-<h2>Community Engagement</h2>
-<ol>
 	<li class="p-experience h-event">
 		<h3 class="p-title">Board Chair</h3>
 		<p><a class="p-name p-org u-url" href="http://coopchild.org/">Cooperative Children's Center</a></p>
