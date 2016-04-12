@@ -19,3 +19,4 @@ After using the new Notes app for about two months I've concluded it is not real
 At this point I'm only reliably using Notes as a scratchpad but it is not useful to me as long-term storage or even week-to-week storage.
 
 At the individual note level things are quite good. Checklist are functional enough and the markup tools are very good. The integration of Notes with Siri - particularly Reminders is great for things like "Remind me to review this note when I get home." I wish there was better keyboard access to the list, heading, and other styling functions. On the iPad Air 2 the ability to use Notes with the new "Slide Over" multi-tasking UI side-by-side with an app like Safari was super-handy. iCloud syncing was flawless and speedy. The biggest failings really are at the level of categorization, organization and referencing of notes.
+

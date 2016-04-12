@@ -17,3 +17,4 @@ It occured to me today as I was texting (or, "iMessaging") some home-buying stat
 So while Twitter is this perfect river-of-news style catch-all for ideas, it is really only for public or semi-public ideas. What I'd much prefer is my own private stream of ideas then I can choose to do something with (ideally, with some pre-configured IFTTT-like glue) and keep a light-weight reference of what happen to this idea ("This idea became a Tweet on January 1st, 2014.")
 
 Am I nuts that this is an obvious product gap in the current "social stream" market? There's of course stuff that does the reverse - you pull N sources for content and put it all back together ("life-streaming") but it is really quite backwards from the intutive workflow I've presented above.
+

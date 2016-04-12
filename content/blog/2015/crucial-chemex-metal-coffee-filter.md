@@ -11,3 +11,4 @@ Last Christmas I was gifted a Chemex coffee maker. Previously I'd made all of ou
 First things to know is that there are instructions on the side of the box and if I had read them I would've saved myself from a rather weak pot of coffee the first time out. You must use a fine grind and you have to be rather particular in how you pour the initial run of water through the filter such that grounds pack-in and get the right flow for the rest of the brewing cycle. With the Chemex paper filters you can be far more lazy about your grind and water pouring methods. This isn't a deal-breaker, it took about three brews to get to a place where I'm happy with the performance of the metal filter.
 
 [1]: http://www.amazon.com/Washable-Stainless-Coffee-Engineered-Crucial/dp/B00PDUYTTU/?tag=79decibels-20
+
