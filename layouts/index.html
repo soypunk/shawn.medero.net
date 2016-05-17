@@ -5,7 +5,7 @@
 	<h1 id="title">Recent Content</h1>	
 	<ul>
     {{ range first 10 (where .Data.Pages "Section" "!=" "") }}
-        {{ .Render "li"}}
+        {{ .Render "title"}}
     {{ end }}
     </ul>
 </section>
