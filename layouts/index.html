@@ -3,9 +3,11 @@
 
 <section id="main" role="main">
 	<h1 id="title">Recent Content</h1>	
+	<ul>
     {{ range first 10 (where .Data.Pages "Section" "!=" "") }}
-        {{ .Render "summary"}}
+        {{ .Render "li"}}
     {{ end }}
+    </ul>
 </section>
 
 {{ partial "footer.html" . }}
