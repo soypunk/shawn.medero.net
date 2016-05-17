@@ -2,6 +2,7 @@
 title: "About Shawn Medero"
 description: "Personal website and blog."
 date: "2015-02-04"
+type: "page"
 ---
 
 Professionally you might know me as a software engineer, product manager or a user experience team lead. I've worked with the W3C HTML Working Group, published on [A List Apart][2], and been a general advocate for the Web platform. (You'll often find my name in the fine-print: bugs, documentation, test cases, or even in the [2004 Firefox 1.0 NY Times announcement][1].) I seem to have a special knack for web architecture and archaeology, interface design, search technology, and mobile devices.

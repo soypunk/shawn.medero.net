@@ -1,0 +1,9 @@
+<article class="link">
+    <header>
+		<h2><a href='{{ index .Params "link" }}'> {{ .Title }}</a> </h2>
+		<div class="link-meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    </header>
+	<section class="link-content">
+    	{{ .Content }}
+    </section>
+</article>

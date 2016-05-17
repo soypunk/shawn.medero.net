@@ -1,0 +1,7 @@
+    <li class="link">
+		<a href="{{ index .Params "link" }}">{{ .Title }}</a>
+		<div class="link-meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+		<section class="link-summary">
+		{{ .Summary }}
+		</section>
+    </li>
