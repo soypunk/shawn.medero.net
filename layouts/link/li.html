@@ -1,7 +1,9 @@
-    <li class="link">
-		<a href="{{ index .Params "link" }}">{{ .Title }}</a>
-		<div class="link-meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-		<section class="link-summary">
-		{{ .Summary }}
-		</section>
+	<li class="item link">
+    	<div class="item-body link-body">
+    		<a class="item-title link-title" href="{{ index .Params "link" }}">{{ .Title }}</a>
+			<section class="item-summary link-summary">
+			{{ .Summary }}
+			</section>
+    	</div>
+		<div class="item-meta link-meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
     </li>
