@@ -1,3 +1,8 @@
+{{ partial "header.html" . }}
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+{{ partial "subheader.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
 <article class="post">
     <header>
 		<h2>{{ .Title }}</h2>
@@ -7,3 +12,5 @@
     	{{ .Content }}
     </section>
 </article>
+
+{{ partial "footer.html" . }}
