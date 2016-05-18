@@ -236,7 +236,9 @@ img.right {
 
 #recent-content .items .item,
 #recent-content .items .item-body,
-#recent-content .items .item-meta {
+#recent-content .items .item-meta,
+#recent-content .items .item-content,
+#recent-content .items .item-summary {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
