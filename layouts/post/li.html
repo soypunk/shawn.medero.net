@@ -1,6 +1,6 @@
     <li class="item post">
     	<div class="item-body post-body">
-    		<a class="item-title post-title" href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
+    		<h3 class="item-title post-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a></h3>
 			<section class="item-summary post-summary">
 			{{ .Summary }}{{ if .Truncated }}…{{ end }}
 			{{ if .Truncated }}
