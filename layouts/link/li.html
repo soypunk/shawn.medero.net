@@ -1,8 +1,8 @@
 	<li class="item link">
     	<div class="item-body link-body">
     		<a class="item-title link-title" href="{{ index .Params "link" }}">{{ .Title }}</a>
-			<section class="item-summary link-summary">
-			{{ .Summary }}
+			<section class="item-content link-content">
+			{{ .Content }}
 			</section>
     	</div>
 		<div class="item-meta link-meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
