@@ -244,6 +244,16 @@ img.right {
   display: flex;
 }
 
+#recent-content .items .item-content,
+#recent-content .items .item-summary {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
 #recent-content .items .item {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
