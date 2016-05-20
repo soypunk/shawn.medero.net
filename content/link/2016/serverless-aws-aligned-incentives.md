@@ -12,7 +12,7 @@ Joe Emison, writing at The New Stack:
 
 > Amazon seems to believe the base building blocks that companies need are API-driven virtualized hardware. In 2008, Amazon went after the data center and the IT staff who controlled machine and VM deployment, and allowed developers to do all of those jobs, using APIs. Amazon has stayed true to this vision, and continues to add more and more API-driven services, adding to the complexity of using Amazon Web Services, and forcing organizations to hire cloud architects and DevOps engineers to manage these services. 
 
-This model has been wildly successful for Amazon and analysts, such as Ben Thomson, are very high on [the growth prospects for AWS][1]. But is it possible that engine that fulls AWS's growth might blind them to an even bigger opportunity?
+This model has been wildly successful for Amazon and analysts, such as Ben Thomson, are very high on [the growth prospects for AWS][1]. But is it possible that engine that fuels AWS's growth might blind them to an even bigger opportunity?
 
 > In contrast, the serverless future seeks only to manage those services that require business-specific logic. Running virtual machines, storage, backups, load balancing, caching, and so many of the things that AWS excels at are not business-specific, and can be outsourced without issue for the vast majority of applications. The base building block for the serverless future is an abstracted set of compute resources that execute business-specific code.
 > 
