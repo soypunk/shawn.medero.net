@@ -2,7 +2,7 @@
 {{ partial "subheader.html" . }}
 
 <section id="recent-content" role="main">
-	<h2 id="title">Recent Content</h2>
+	<h2 id="title">Recently...</h2>
 	<ul class="items">
     {{ range first 10 (where .Data.Pages "Section" "!=" "") }}
         {{ .Render "li"}}
