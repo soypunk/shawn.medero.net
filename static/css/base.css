@@ -36,8 +36,10 @@ table{border-collapse:collapse;border-spacing:0}
 /* 
 Styling
 
-dark-grey: #A6A295
-light-grey: #CCC7BA
+dark-grey: #5D5A4F
+grey: #757266
+light-grey: #A6A295
+light-light-grey: #CCC7BA
 black: #141109
 border-black: #2B2820
 blue: #4AAEF1
@@ -89,6 +91,7 @@ a:active { color: #FF0000; }
 h1, h2, h3 {
 	color: #2B2820;
 	font-weight: normal;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 h1 {
@@ -153,11 +156,16 @@ li { margin-left: 1.5rem; }
 
 p { vertical-align: baseline; }
 
-blockquote {  }
+blockquote {  
+  margin-left: 0.125rem;
+  border-left: 1px solid #CCC7BA;
+  padding-left: 0.5rem;
+  color: #757266;
+  font-style: normal;
+}
 blockquote p { 
-	margin-left: 1rem;
-	margin-right: 1rem;
-	font-style: italic;
+	margin-left: 0;
+	margin-right: 0;
 }
 blockquote footer { 
 	font-style: normal;
@@ -291,7 +299,7 @@ img.right {
 	
 	#family-header-image { width: 100%; }
 	
-	body > section, article, header, footer {
+	body > section, body > article, body > header, body > footer {
 		padding-left: 0.438em;
 		padding-right: 0.438em;
 	}
@@ -304,7 +312,7 @@ img.right {
 		margin-right: 37.5%;
 	}
 	
-	body > section, article, header, footer {
+	body > section, body > article, body > header, body > footer {
 		padding-left: 0.5882352941176471em;
 		padding-right: 0.5882352941176471em;
 	}
