@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "subheader.html" . }}
+
+<section id="recent-content" role="main">
+	<h2 id="title">Archives: {{ .Title }}s</h2>
+	{{ range (where .Data.Pages.GroupByDate "2006" "Section" "=" "post") }}
+		<h3>{{ .Key }}</h3>
+        	<ul class="items">
+            {{ range .Pages }}
+            	{{ .Render "li"}}
+            {{ end }}
+            </ul>
+	{{ end }}	
+</section>
+
+{{ partial "footer.html" . }}
