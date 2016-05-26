@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+{{ partial "subheader.html" . }}
+
+<section id="recent-content" role="main">
+	<h2 id="title">{{ .Title }}</h2>
+	<ul class="items">
+    {{ range (where .Data.Pages "Section" "=" "link") }}
+        {{ .Render "li"}}
+    {{ end }}
+    </ul>
+</section>
+
+{{ partial "footer.html" . }}
