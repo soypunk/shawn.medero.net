@@ -2,7 +2,7 @@
 {{ partial "subheader.html" . }}
 
 <section id="recent-content" role="main">
-	<h2 id="title">Archives: {{ .Title }} Links</h2>
+	<h2 id="title">Archives: {{ .Title }} Posts</h2>
 	{{ range .Data.Pages.GroupByDate "2006"  }}
 		<h3>{{ .Key }}</h3>
         	<ul class="items">
