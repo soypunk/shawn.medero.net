@@ -3,7 +3,7 @@
 
 <section id="recent-content" role="main">
 	<h2 id="title">Archives: {{ .Title }} Links</h2>
-	{{ range (where .Data.Pages.GroupByDate "2006" "Section" "=" "link") }}
+	{{ range .Data.Pages.GroupByDate "2006"  }}
 		<h3>{{ .Key }}</h3>
         	<ul class="items">
             {{ range .Pages }}
