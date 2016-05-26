@@ -1,10 +1,10 @@
 +++
-date = "2016-05-20T11:08:59-07:00"
+date = "2016-05-26T11:08:59-07:00"
 draft = false
 link = "https://adactio.com/journal/10708"
-tags = ["AWS"]
-title = "The New Stack: How Amazon Web Services Isn’t Winning and the Problems it Poses"
-topics = ["Cloud Computing"]
+tags = ["browsers", "URLs", "www"]
+title = "URLs aren't bugs"
+topics = ["Mobile"]
 
 +++
 
