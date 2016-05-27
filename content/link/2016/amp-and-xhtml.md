@@ -1,6 +1,6 @@
 +++
 date = "2016-05-27T12:08:01-07:00"
-draft = true
+draft = false
 link = "https://www.ampproject.org/docs/guides/validate.html"
 tags = ["AMP", "XHTML"]
 title = "Google AMP and XHTML"
