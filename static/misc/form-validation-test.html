@@ -1,10 +1,7 @@
 <!doctype html>
-<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/webshim/1.15.10/dev/polyfiller.js"></script>
-<title>HTML5 Form Validation Test</title>
-<h1>HTML5 Form Validation Test</h1>
-
-<!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 
 <script> 
 	webshim.activeLang('en');
@@ -12,11 +9,16 @@
 	webshims.cfg.no$Switch = true;
 </script>
 
+<title>HTML5 Form Validation Test</title>
+
+<h1>HTML5 Form Validation Test</h1>
+
 <form id="customerForm">
     <label>
         First Name:
         <input id="firstName" required />
     </label>
+    <br>
     <label>
         Social Security Number:
         <input id="ssn" required pattern="^d{3}-d{2}-d{4}$"
