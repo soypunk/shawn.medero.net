@@ -1,6 +1,6 @@
 <!doctype html>
-<!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/webshim/1.15.10/dev/polyfiller.js"></script>
 
 <script> 
@@ -13,11 +13,19 @@
 
 <h1>HTML5 Form Validation Test</h1>
 
-<form id="customerForm">
+<form id="testForm">
     <label>First Name: <input id="firstName" required></label>
     <br>
-    <label>Social Security Number:<input id="ssn" required pattern="^d{3}-d{2}-d{4}$" title="Expected pattern is ###-##-####"></label>
+    <label>Social Security Number:<input id="ssn" required></label>
     <br>
+    <input id="saveButton" type="button" value="Save">
     <input type="submit">
 </form>
 
+<script>
+	$("#saveButton").click(function() {
+		$("#testForm").attr("novalidate", true);
+		$("#testForm").submit();
+		$("#testForm").attr("novalidate", false);		
+	});
+</script>
