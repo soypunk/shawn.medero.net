@@ -1,13 +1,40 @@
 {{ partial "header.html" . }}
 {{ partial "subheader.html" . }}
 
-<section id="recent-content" role="main">
-	<h2 id="title">Recently...</h2>
-	<ul class="items">
-    {{ range first 10 (where .Data.Pages "Section" "!=" "") }}
-        {{ .Render "li"}}
-    {{ end }}
-    </ul>
-</section>
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main">
+				<header>
+					<span class="avatar"><img src="images/avatar.gif" alt="" /></span>
+					<h1>Shawn Medero</h1>
+					<p>Consultant</p>
+					<p><small>Product&nbsp;Development,<br> Product&nbsp;Strategy,<br> User&nbsp;Experience</small></p>
+				</header>
+				<hr />
+				<h2>Get In Touch</h2>
+				<form method="POST" action="http://formspree.io/web_contact@medero.net">
+					<input type="hidden" name="_subject" value="Website Message" />
+					<input type="hidden" name="_format" value="plain" />
+					<input type="text" name="_gotcha" style="display:none" />
+					<div class="field">
+						<input type="email" name="email" placeholder="Your email">
+					</div>
+					<div class="field">
+						<textarea name="message" rows="4" placeholder="Your message"></textarea>
+					</div>
+					<ul class="actions">
+						<li><button type="submit">Send</button></li>
+					</ul>						  
+				</form>			
+				<hr />					
+				<footer>
+					<ul class="icons">
+						<!-- <li><a href="https://pndt.me" title="Blog: pndt.me" class="fa-globe">Blog</a></li> -->
+						<li><a href="https://twitter.com/soypunk" title="Twitter: @soypunk" class="fa-twitter">Twitter</a></li>
+						<li><a href="https://www.instagram.com/shawn.medero/" title="Instagram: @shawn.medero" class="fa-instagram">Instagram</a></li>
+					</ul>
+				</footer>
+			</section>
 
 {{ partial "footer.html" . }}

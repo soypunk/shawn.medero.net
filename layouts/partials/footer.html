@@ -1,3 +1,15 @@
-<footer>
-© 2008-{{.Now.Format "2006"}}.
-</footer>
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Shawn Medero</li>
+				</ul>
+			</footer>
+		<!-- Scripts -->
+		<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
+		</script>
+	</body>
+</html>
