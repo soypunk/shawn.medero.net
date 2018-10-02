@@ -16,4 +16,4 @@ deploy:
   local-dir: public
   skip_cleanup: true
   on:
-    repo: sopypunk/shawn.medero.net
+    repo: soypunk/shawn.medero.net
