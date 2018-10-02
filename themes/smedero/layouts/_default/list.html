@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <section class="">
+        {{- .Content -}}    
+    </section>
+    <ul class="list ma0 pa0">
+    {{ range .Paginator.Pages }}
+        {{ .Render "li"}}
+    {{ end }}
+    </ul>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <section class="">
+        {{- .Content -}}    
+    </section>
+    {{ range (where .Site.Pages "Type" "blog").GroupByDate "2006" }}
+        <h2>{{ .Key }}</h2>
+        <ul>
+        {{ range .Pages }}
+            <li class="nested-link">
+                <p>
+                    <time><a href="{{ .Permalink }}" class="">{{ .Date.Format "2006-01-02" }}</a></time> - {{ if .Title }}{{ .Title }}{{ else }}{{ if gt (len .Summary) 150 }}{{ slicestr .Summary 0 150 | markdownify }}&#8230;{{ else }}{{ .Summary }}{{ end }}{{ end }}</a>
+                </p>                            
+            </li>
+        {{ end }}            
+        </ul>
+    {{ end }}
+{{ end }}

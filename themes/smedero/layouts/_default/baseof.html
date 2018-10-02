@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">        
+        <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+        {{ with .Params.Description }}
+        <meta name="description" content="{{ . | plainify }}">
+        {{ end }}
+        {{ with .Site.Params.micro_blog }}
+        <link rel="me" href="https://micro.blog/{{ . }}" />
+        {{ end }}
+        {{ with .Site.Params.twitter }}
+        <link rel="me" href="https://twitter.com/{{ . }}" />
+        {{ end }}
+        {{ with .Site.Params.github }}
+        <link rel="me" href="https://github.com/{{ . }}" />
+        {{ end }}
+        
+        {{ block "favicon" . }}
+        {{ partial "site-favicon.html" . }}
+        {{ end }}
+        
+        {{- template "_internal/opengraph.html" . -}}
+        {{- template "_internal/google_news.html" . -}}
+        {{- template "_internal/schema.html" . -}}
+        {{- template "_internal/twitter_cards.html" . -}}
+        <style type="text/css">
+        .cina-red { color: #c30 }
+        .bg-cina-red { background-color: #c30 }
+        .verdana { font-family: Verdana, "Bitstream Vera Sans", "DejaVu Sans", Tahoma, Geneva, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif; }
+        .gill-sans { font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }        
+        .post-content *:first-child { margin-top: 0; }
+        .post-content blockquote {
+            color: #777;
+            border-left: 1px solid rgb(232, 232, 232);
+            border-right: 0px solid rgb(232, 232, 232);
+            margin: 0;
+            padding: 0 1em;
+        }
+        .nested-copy-line-height h1 {
+            font-size: 2.25em;
+        }
+        .nested-copy-line-height h2 {
+            font-size: 1.5em;
+        }
+        .nested-copy-line-height h3 {
+            font-size: 1.25em;
+        }
+        .nested-copy-line-height h4,
+        .nested-copy-line-height h5,
+        .nested-copy-line-height h6 {
+            font-size: 1em;
+        }
+        .nested-copy-line-height h1,
+        .nested-copy-line-height h2,
+        .nested-copy-line-height h3,
+        .nested-copy-line-height h4,
+        .nested-copy-line-height h5,
+        .nested-copy-line-height h6 {
+            line-height: 1.25;
+        }
+        .nested-img img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+            width: inherit;
+        }
+        .nested-figure figure {
+            max-width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .nested-embeds iframe,
+        .nested-embeds embed,
+        .nested-embeds object,
+        .nested-embeds video {
+            max-width: 100%;
+        }
+        .nested-hr hr {
+            border: 1px solid #FFFFFF;
+            margin: 2rem 0;
+        }
+        .nested-code pre,
+        .nested-code code {
+            font-size: .875em;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            background-color: #EEE;
+            display: block;
+            color: #444444;
+        }
+        .nested-list ul {
+            list-style: none;
+            padding-left: 1em;
+        }
+        .nested-list li {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .nested-list ul > li:before {
+            content: "\25AA";
+            display: block;
+            color: #999;
+            height: 0;
+            width: 0;
+            left: -1em;
+            top: 0;
+            position: relative;
+        }
+        .nested-dt dt {
+            margin: 0.5rem 0;
+        }
+        .nested-table table {
+            border-collapse: collapse;
+        }
+        .nested-table thead {
+            border-bottom: 2px solid #333;
+        }
+        .nested-table th,
+        .nested-table td {
+            padding: 0.67rem 0.5rem;
+            text-align: left;
+        }
+        .nested-links a {
+            text-decoration: underline;
+            transition: color .15s ease-in;
+        }
+        .pagination a,
+        .pagination a:link, 
+        .pagination a:hover,
+        .pagination a:active,       
+        .nested-link a,
+        .nested-link a:link,
+        .nested-link a:hover,
+        .nested-link a:active {
+            color: #00449e;
+        }
+        .pagination a:visited,        
+        .nested-link a:visited {
+            color: #5E2CA5;
+        }
+        .pagination a:hover,
+        .pagination a:focus,       
+        .nested-links a:hover,
+        .nested-links a:focus {
+            color: #357EDD;
+            transition: color .15s ease-in;
+        }
+        .pagination .active a {
+            color: #111;
+        }
+        .content > p:nth-last-of-type(1) {
+            display: inline;
+        }
+        @media screen and (min-width: 30em) {
+            #wrapper { background: linear-gradient(rgb(255,223,223) 0px, rgb(255,223,223) 100%) right top / calc(100% / 3) 100% no-repeat rgb(255, 255, 255); }
+        }
+        </style>
+    </head>
+    <body class="h100 bg-near-white verdana">
+        <div id="wrapper" class="mw8 pb1 center min-h-100 f6 lh-copy bg-white dark-gray shadow-2">
+            {{- partial "header.html" . -}}
+            <div class="flex-ns">
+                <main id="main" role="main" class="w-100 w-two-thirds-ns pt3 pb1 ph3 ph4-ns">
+                    {{- block "main" . }}{{- end }}
+                </main>
+                <aside id="sidebar" class="w-100 w-third-ns">
+                    {{- block "sidebar_image" . }}{{- end }}                
+                    <div class="pt3 ph3">
+                        {{- block "sidebar" . }}{{- end }}
+                    </div>
+                </aside>                
+            </div>            
+            {{- partial "footer.html" . -}}
+        </div>
+    </body>
+</html>

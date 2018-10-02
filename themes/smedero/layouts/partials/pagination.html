@@ -1,0 +1,39 @@
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<ul class="list ma0 mb4 pa0 pagination gill-sans ttu tracked">
+    {{ with $pag.First }}
+    <li class="dib page-item ba b--moon-gray br3 pv1 ph2 mr2">
+        <a href="{{ .URL }}" class="link" aria-label="First"><span aria-hidden="true">First</span></a>
+    </li>
+    {{ end }}
+    <li class="dib  page-item{{ if not $pag.HasPrev }} disabled{{ end }} ba b--moon-gray br3 pv1 ph2 mr2">
+    <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" class="link" aria-label="Previous"><span aria-hidden="true">&laquo; Previous</span></a>
+    </li>
+    {{ $.Scratch.Set "__paginator.ellipsed" false }}
+    {{ range $pag.Pagers }}
+    {{ $right := sub .TotalPages .PageNumber }}
+    {{ $showNumber := or (le .PageNumber 3) (eq $right 0) }}
+    {{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }}
+    {{ if $showNumber }}
+        {{ $.Scratch.Set "__paginator.ellipsed" false }}
+        {{ $.Scratch.Set "__paginator.shouldEllipse" false }}
+    {{ else }}
+        {{ $.Scratch.Set "__paginator.shouldEllipse" (not ($.Scratch.Get "__paginator.ellipsed") ) }}
+        {{ $.Scratch.Set "__paginator.ellipsed" true }}
+    {{ end }}
+    {{ if $showNumber }}
+    <li class="dib page-item{{ if eq . $pag }} active bg-washed-red b--dark-red{{ end }} ba b--moon-gray br3 pv1 ph2 mr2"><a class="link" href="{{ .URL }}">{{ .PageNumber }}</a></li>
+    {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
+    <li class="dib page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    {{ end }}
+    {{ end }}
+    <li class="dib page-item{{ if not $pag.HasNext }} disabled{{ end }} ba b--moon-gray br3 pv1 ph2 mr2">
+    <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" class="link" aria-label="Next"><span aria-hidden="true">Next &raquo;</span></a>
+    </li>
+    {{ with $pag.Last }}
+    <li class="dib page-item ba b--moon-gray br3 pv1 ph2">
+        <a href="{{ .URL }}" class="link" aria-label="Last"><span aria-hidden="true">Last</span></a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

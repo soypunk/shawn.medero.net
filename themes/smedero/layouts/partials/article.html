@@ -1,0 +1,15 @@
+<article class="h-entry">
+    {{ with .Title }}
+    <h1 class="post-title p-name mt5 mb0" itemprop="name headline">{{ . }}</h1>
+    {{ end }}
+    <div class="post-meta {{ with .Title }}mb3{{ end }}">
+        <span class="silver">{{ with .Title }}Published {{ end }}<a class="u-url link silver" href="{{ .Permalink }}">
+            <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time></a>
+        </span>
+        <span class="dn">by</span>
+        <span class="dn p-author">{{ .Params.author | default .Site.Author.name }}</span>	                                 
+    </div>
+    <div class="post-content clearfix e-content nested-copy-line-height nested-img nested-figure nested-embeds nested-hr nested-code nested-list nested-blockquote nested-dt nested-table nested-link nested-form" itemprop="articleBody">
+        {{ .Content }}
+    </div>
+</article>

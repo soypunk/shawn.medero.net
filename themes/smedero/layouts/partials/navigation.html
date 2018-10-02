@@ -1,0 +1,14 @@
+<nav class="bg-cina-red pl5 pl6-ns" role="navigation">
+{{ if .Site.Menus.main }}
+    <ul class="list ma0 pa0 pl4 pl3-ns gill-sans f5 fw4">
+    {{ $currentPage := . }}           
+    {{ range .Site.Menus.main }}
+        <li class="dib pr3 ttu tracked">
+            <a class="link dib pv1 no-underline hover-black {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} bg-washed-red cina-red{{ else }} white-90{{end}}" href="{{ .URL }}" title="{{ .Name }} page">
+                {{ .Name }}
+            </a>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}
+</nav>

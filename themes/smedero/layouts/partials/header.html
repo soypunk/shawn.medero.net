@@ -1,0 +1,11 @@
+<header class="relative pt3">
+    <a href="{{ .Site.BaseURL }}" class="absolute top-1 left-1 left-2-ns w3 h3 w-10-ns h-auto-ns">
+        <img src="{{ .Site.BaseURL }}/images/avatar.jpg" class="dib h-75-ns w-75-ns pa1 br-100 bg-white" alt="avatar">
+    </a>
+    <h1 class="ma0 mb1 pl5 pl6-ns gill-sans ttu tracked f4 f3-ns lh-title fw4">
+        <a href="{{ .Site.BaseURL }}" class="dib pl4 pl3-ns link no-underline cina-red hover-black">
+          {{ .Site.Title }}
+        </a>    
+    </h1>
+    {{ partial "navigation.html" .}}
+</header>
