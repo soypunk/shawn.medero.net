@@ -1,3 +1,17 @@
-baseURL = "http://example.org/"
+baseURL = "/"
+title = "Shawn Medero"
+MetaDataFormat = "yaml"
 languageCode = "en-us"
-title = "My New Hugo Site"
+DefaultContentLanguage = "en"
+theme = "smedero"
+disableHugoGeneratorInject = true
+verbose = true
+SectionPagesMenu = "main"
+pluralizeListTitles = false
+Paginate = 10
+
+[params]
+    favicon = ""
+    micro_blog = "soypunk"
+    twitter = "soypunk"
+    github = "soypunk"
