@@ -3,6 +3,12 @@
 
 # Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
 _site/
+/public/
+.hugo_build.lock
+.DS_Store
+node_modules
+dist
+tmp
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
