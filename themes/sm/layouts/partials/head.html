@@ -80,6 +80,6 @@
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
 
-<link rel="stylesheet" href="{{ "/main.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "main.css" | relURL }}" />
 	
 <meta name="theme-color" content="#ffffff">
