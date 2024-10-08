@@ -6,6 +6,8 @@ tags:
 - M-Space
 - rpg
 - Traveller
+aliases:
+- /2020/1/traveller-universal-world-profiles-to-m-space-planets
 ---
 
 Traveller is well known for it is various "universal codes." The Universal Character Profile/Universal Personality Profile was a shorthand method to quickly describe a character's characteristics. The Universal Planetary Profile/Universal World Profile (UWP) describes the qualities of a world. In this article I want to take at look at how you can map a UWP to an M-Space Planet so that you can reuse Traveller-specific mapping tools with M-Space. It will not be always be a one-to-one mapping and there will be some judgements you'll have to make for your game.
