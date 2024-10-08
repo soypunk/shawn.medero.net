@@ -1,0 +1,16 @@
+baseURL = 'https://shawn.medero.net/'
+languageCode = 'en-US'
+title = 'Shawn Medero'
+disableKinds = ['taxonomy']
+theme = 'sm'
+
+enableRobotsTXT = true
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+
+[taxonomies]
+  tag = 'tags'

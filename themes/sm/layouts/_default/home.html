@@ -1,0 +1,38 @@
+{{ define "main" }}  
+  {{ range $index, $value := (where .Site.RegularPages "Section" "blog") }}
+  <article class="h-entry margin-bottom-large">
+    {{ if .Title }}
+    <header class="entry-header">
+	  <h1 class="h2">
+		<a href="{{ .RelPermalink }}" rel="bookmark" title="link to this post" class="u-url">
+		  <span class="no-underline">∞&nbsp;</span>
+		  <span class="p-name">
+			{{ .LinkTitle }}
+		  </span>
+		</a>
+	  </h1>
+    </header>
+	<section class="e-content prose flow">
+	  {{ .Content }}
+	</section>
+	<footer>
+	  <p class="text-small text-muted no-margin-top no-padding-top">
+		<time datetime="{{ .Date | time.Format "2006-01-02T15:04:05Z" }}" class="dt-published">{{ .Date | time.Format "2006-01-02" }}</time>
+	  </p>
+	</footer>	
+    {{ else }}
+	<section class="prose flow">
+	  <div class="e-content">
+		{{ .Content }}
+	  </div>		
+	  <p class="text-small text-muted no-margin-top no-padding-top">
+		<a href="{{ .RelPermalink }}" rel="bookmark" title="link to this post" class="u-url">		
+		  <span class="no-underline">∞&nbsp;</span>
+		  <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05Z" }}" class="dt-published">{{ .Date | time.Format "2006-01-02" }}</time>
+		</a>
+	  </p>																							
+	</section>
+    {{ end }}
+  </article>
+  {{ end }}
+{{ end }}

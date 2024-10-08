@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" itemscope itemtype="https://schema.org/ProfilePage" prefix="og: https://ogp.me/ns#">
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body class="padding-top padding-bottom">
+	<a href="#main" class="visually-hidden">Skip to main content</a>
+		<div class="container">
+			<div class="row">
+				<div class="grid-fourth"></div>
+				<div class="grid-half">
+					{{ if .IsHome }}
+					<header id="about"
+						class="row row-gap-large h-card  p-author  u-author"
+						itemprop="mainEntity" itemprop="mainEntity" itemtype="https://schema.org/Person" itemscope>
+						{{ partial "header_bio.html" . }}
+					{{ else }}
+					<header class="row">
+						{{ partial "header_nav.html" . }}
+					{{ end }}    				
+					</header>
+					
+					<hr>
+					<main id="main" role="main">
+						{{ block "main" . }}{{ end }}
+					</main>
+					
+					<hr>
+					
+					<footer>
+						{{ partial "footer.html" . }}
+					</footer>
+				</div>
+				<div class="grid-fourth"></div>
+			</div>				
+		</div>
+	</body>
+</html>

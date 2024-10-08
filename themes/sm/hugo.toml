@@ -1,0 +1,8 @@
+baseURL = 'https://shawn.medero.net/'
+languageCode = 'en-US'
+title = 'Shawn Medero'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

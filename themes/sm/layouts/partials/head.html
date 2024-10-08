@@ -1,0 +1,85 @@
+<meta charset="utf-8">
+	
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<meta name="author" content="Shawn Medero">	
+
+{{- with or .Title site.Title site.Params.title | plainify }}
+<meta property="og:title" itemprop="name" content="{{ . }}">
+{{- end }}
+{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
+<meta name="description" property="og:description" itemprop="headline" content="{{ . }}">
+{{- end }}
+
+{{- with or site.Title site.Params.title | plainify }}
+<meta property="og:site_name" content="{{ . }}">
+{{- end }}
+
+{{- with or .Params.locale site.Language.LanguageCode }}
+<meta property="og:locale" itemprop="inLanguage" content="{{ replace . `-` `_` }}">
+{{- end }}
+
+{{- if .IsPage }}
+<meta property="og:url" itemprop="url" content="{{ .Permalink }}">
+<meta property="og:type" content="article">
+{{- with .Section }}
+<meta property="article:section" content="{{ . }}">
+{{- end }}
+{{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+{{- with .PublishDate }}
+<meta property="article:published_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
+{{- end }}
+{{- with .Lastmod }}
+<meta property="article:modified_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
+{{- end }}
+{{- range .GetTerms "tags" | first 6 }}
+<meta property="article:tag" content="{{ .Page.Title | plainify }}">
+{{- $keywords := slice }}
+{{- range .GetTerms "keywords" }}
+  {{- $keywords = $keywords | append .Title }}
+{{- else }}
+  {{- with .Keywords }}
+    {{- $keywords = . }}
+  {{- else }}
+    {{- range .GetTerms "tags" }}
+      {{- $keywords = $keywords | append .Title }}
+    {{- else }}
+      {{- range $taxonomy, $_ := site.Taxonomies }}
+        {{- range $.GetTerms $taxonomy }}
+          {{- $keywords = $keywords | append .Title }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- with $keywords }}
+<meta name="keywords" itemprop="keywords" property="article:tag" content="{{ delimit . `,` }}">
+{{- end -}}
+{{- end }}
+{{- else }}
+<meta property="og:type" content="website">
+{{- end }}
+
+
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="canonical" href="https://shawn.medero.net/">
+<link rel="me" href="https://friend.camp/@soypunk">
+<link rel="me" href="https://bsky.app/profile/shawn.medero.net">	
+<link rel="me" href="https://github.com/soypunk">
+<link rel="me" href="http://discordapp.com/users/473263777882570752">
+<link rel="me" href="https://www.linkedin.com/in/shawnmedero">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/_apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/_favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/_favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">		
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
+<link rel="stylesheet" href="{{ "/main.css" | relURL }}" />
+	
+<meta name="theme-color" content="#ffffff">
