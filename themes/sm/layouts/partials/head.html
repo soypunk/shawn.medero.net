@@ -80,6 +80,10 @@
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
 
+<link
+  href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}"
+  rel="alternate" type="application/json" title="{{ .Site.Title }}" />
+
 <link rel="stylesheet" href="{{ "main.css" | relURL }}" />
 	
 <meta name="theme-color" content="#ffffff">
