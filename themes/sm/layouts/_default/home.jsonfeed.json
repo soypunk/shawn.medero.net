@@ -14,8 +14,8 @@
       "language": "en",
       "title": {{ .Title | jsonify }},
       "date_published": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-      "content_text": {{ .Plain | htmlUnescape | jsonify }},
-      "content_html": {{ .Content | jsonify }}
+      "content_text": {{ .Summary | chomp | plainify | htmlUnescape | jsonify }},
+      "content_html": {{ .Summary | chomp | plainify | jsonify }}
     }
     {{- end }}
   ]
