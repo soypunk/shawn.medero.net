@@ -16,6 +16,9 @@
       {{ if .Title }}
       "title": {{ .Title | jsonify }},
       {{ end }}
+      {{ with .Params.external_url }}
+      "external_url": {{ . | jsonify }},
+      {{ end }}
       "content_text": {{ .Summary | chomp | plainify | htmlUnescape | jsonify }},      
       "content_html": {{ .Summary | chomp | plainify | jsonify }}
     }
