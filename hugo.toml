@@ -10,9 +10,14 @@ enableRobotsTXT = true
   mediaType = "application/json"
   baseName = "feed"
   isPlainText = true
-  
+
+[outputFormats.humanstxt]
+    baseName = "humans"
+    isPlainText = true
+    mediaType = "text/plain"
+
 [outputs]
-  home = ["html", "jsonfeed", "rss"]
+  home = ["html", "jsonfeed", "rss", "humanstxt"]
 
 [sitemap]
   changeFreq = ''

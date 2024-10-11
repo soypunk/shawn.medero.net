@@ -1,0 +1,16 @@
+/* TEAM */    
+	Webmaster: Shawn Medero
+	Contact: shawn [at] medero.net
+	Mastodon: @friend.camp@soypunk
+	Bluesky: @shawn.medero.net
+	Location: Claremont, CA
+							
+/* THANKS */			
+	Name: Chris Ferdinandi for the Kraken boilerplate CSS 	https://cferdinandi.github.io/kraken/
+                            
+/* SITE */
+	Last update: {{ now.Format "2006/01/02" }}
+	Language: {{ site.Language.LanguageCode }}
+	Doctype: HTML5
+	Standards: HTML5, CSS3, Open Graph protocol, Schema.org
+	Components: Hugo, Kraken
