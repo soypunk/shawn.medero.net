@@ -6,7 +6,7 @@
     {{- .Permalink | jsonify -}}
   {{- end }},
   "items": [
-    {{ range $index, $value := first 15 (where .Site.RegularPages "Section" "blog") }}
+    {{ range $index, $value := where .Paginator.Pages ".Params.tags" "intersect" (slice "micro")}}
     {{- if $index }}, {{ end }}
     {
       "id": {{ .Permalink | jsonify }},
