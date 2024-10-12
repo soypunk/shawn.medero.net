@@ -15,6 +15,16 @@ enableRobotsTXT = true
   mediatype = "application/json"
   baseName = "micro"
   isPlainText = true
+  
+[outputFormats.links]
+  mediatype = "application/json"
+  baseName = "links"
+  isPlainText = true
+  
+[outputFormats.articles]
+  mediatype = "application/json"
+  baseName = "articles"
+  isPlainText = true
 
 [outputFormats.humanstxt]
 	baseName = "humans"
@@ -22,7 +32,7 @@ enableRobotsTXT = true
 	mediaType = "text/plain"
 
 [outputs]
-  home = ["html", "jsonfeed", "rss", "humanstxt", "micro"]
+  home = ["html", "jsonfeed", "rss", "humanstxt", "micro", "links", "articles"]
 
 [sitemap]
   changeFreq = ''
