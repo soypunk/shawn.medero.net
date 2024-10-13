@@ -20,7 +20,7 @@
       "external_url": {{ . | jsonify }},
       {{ end }}
       "content_text": {{ .Summary | chomp | plainify | htmlUnescape | jsonify }},
-      "content_html": {{ .Summary | chomp | plainify | jsonify }}
+      "content_html": {{ .Summary | chomp | jsonify }}
     }
     {{- end }}
   ]
