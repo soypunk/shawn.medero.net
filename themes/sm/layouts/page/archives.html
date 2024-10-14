@@ -27,8 +27,13 @@
 				{{ if .Title }}
 				<header class="entry-header">
 				  <h1 class="h2">
+					{{ if .Params.external_url }}
+					<a href="{{ .Params.external_url  }}" rel="external" title="source link for content" class="u-url">
+					  <span class="no-underline">⤴&nbsp;</span>
+					{{ else }}
 					<a href="{{ .RelPermalink }}" rel="bookmark" title="link to this post" class="u-url">
 					  <span class="no-underline">∞&nbsp;</span>
+					{{ end }}
 					  <span class="p-name">
 						{{ .LinkTitle }}
 					  </span>

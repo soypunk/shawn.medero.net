@@ -625,11 +625,15 @@ td {
  */
 
 blockquote {
-  font-size: 1.1875em;
+  font-size: 1em;
   font-style: italic;
   margin: 0 0 var(--spacing);
   padding-left: 0.8125em;
   padding-right: 0.8125em;
+  color: lch(var(--l-40) var(--c-black));
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: lch(var(--l-60) var(--c-black));
 }
 
 cite {
@@ -1142,7 +1146,7 @@ a:visited {
    * Specifies the minimum number of lines to print at the top and bottom of a page.
    */
   p,
-h1, h2, h3 {
+  h1, h2, h3 {
     orphans: 3;
     widows: 3;
   }
@@ -1159,7 +1163,7 @@ h1, h2, h3 {
    * Avoid page breaks inside the content
    */
   pre,
-blockquote {
+  blockquote {
     border-color: #999;
     page-break-inside: avoid;
   }
