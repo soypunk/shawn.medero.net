@@ -6,3 +6,13 @@ title = 'Shawn Medero'
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+[params]
+  [params.author]
+  	name = "Shawn Medero"
+  	email = "shawn@medero.net"
+  	mastodon = "https://friend.camp/@soypunk"
+	bluesky = "https://bsky.app/profile/shawn.medero.net"
+	github = "https://github.com/soypunk"
+	discord = "http://discordapp.com/users/473263777882570752"
+	linkedin = "https://www.linkedin.com/in/shawnmedero"
