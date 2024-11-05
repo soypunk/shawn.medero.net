@@ -22,15 +22,15 @@ Over a year ago, Phil Gyford opened up [https://ooh.directory][4], which Phil de
 
 As an example of "this should really be a blog post" - here's an example of the "heavily package" content experience that befuddles me. Jason Kottke had shared a link about the "most borrowed library books" that looked interesting. So I clicked on the link and the following happened:
 
-![A webpage screenshot with a giant banner ad and only the title & byline of the article content is shown within the screen.](_wherefore-art-thou-blog-images/article-hell-1.png)
+![A webpage screenshot with a giant banner ad and only the title & byline of the article content is shown within the screen.](/blog/2024/_wherefore-art-thou-blog-images/article-hell-1.png)
 
 It sucks to click on a link to an article and then only see the title of the article that I already decided I wanted to read as the only thing on the screen. I get it, websites cost money and need a business model to recoup that money - so ads. Was it really not possible to fit in more than just the title, byline, and a single sentence lede? That's okay though because even if more than the lede had been there before I could even scroll down my screen was covered with this:
 
-![A webpage screenshot with a giant video banner ad covering the entire content of the screen](_wherefore-art-thou-blog-images/article-hell-2.png)
+![A webpage screenshot with a giant video banner ad covering the entire content of the screen](/blog/2024/_wherefore-art-thou-blog-images/article-hell-2.png)
 
 I don't know what this is and I don't want it. I wanted to read an article and instead there was like a two minute montage of people skiing covering the entire viewport and there wasn't even "80s movie action" skiing music. Finally after I figured how to dismiss the ad and scroll down I was left with this mess:
 
-![A webpage screenshot showing a few paragraphs of overly hyperlinked text and 4 different ads, some of which are overlapping themselves.](_wherefore-art-thou-blog-images/article-hell-3.png)
+![A webpage screenshot showing a few paragraphs of overly hyperlinked text and 4 different ads, some of which are overlapping themselves.](/blog/2024/_wherefore-art-thou-blog-images/article-hell-3.png)
 
 This screenshot is hilarious for a number of reasons. First of all there are ads overlapping each other - so I can't even tell you what the ads are about. Content baby! Second, this paragraph is impossible to read because there are too many hyperlinks distracting me from just like... catching my breath and figuring out where to start reading. What's sad is I don't even know what the most borrowed library books were because I gave up trying to read the article at this point.
 
