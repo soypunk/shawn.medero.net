@@ -10,7 +10,7 @@ If you’d like to talk, you contact me by <a itemprop="email" href="mailto:shaw
 
 I am most proud of my community service efforts. I have to give a thanks to [Rotary's Interact][Interact] program at my high school which showed me how important it was to make difference in my community while helping me foster leadership skills.
 
-Currently I'm Secretary for the Board of [Youth Theatre Works][ytw], an amazing non-profit that gives kids an inclusive space to be creative through the framework of theatrical productions. I also advise the Directors on technical matters from time to time. If there's one thing I would want anyone to do it would be to find a local arts program you care about in your community and find the best way you can support them.
+Currently I'm President for the Board of [Youth Theatre Works][ytw], an amazing non-profit that gives kids an inclusive space to be creative through the framework of theatrical productions. I also advise the Directors on technical matters from time to time. If there's one thing I would want anyone to do it would be to find a local arts program you care about in your community and find the best way you can support them.
 
 I care deeply about equity in our schools and contribute time to the local school district's [Equity Advisory Council][EAC] as a Community Member/Parent. I am very thankful that our school district recognizes the need for this work and provides a space for collaborations between students, staff, and the larger local school community.
 
