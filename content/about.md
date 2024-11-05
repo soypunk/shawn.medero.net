@@ -26,7 +26,7 @@ I have also [co-authored some research papers][GS], primarily on topics relating
 
 ## Elsewhere
 
-Read my stream of thought microblog musings on Mastodon (<a rel="me" href="https://friend.camp/@soypunk">@friend.camp@soypunk</a>) or <a href="https://bsky.app/profile/shawn.medero.net" rel="me">Bluesky</a>.
+Read my stream of thought microblog musings on Mastodon ([@friend.camp@soypunk](https://friend.camp/@soypunk)) or [Bluesky](https://bsky.app/profile/shawn.medero.net).
 
 ## Colophon
 
