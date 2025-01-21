@@ -3,6 +3,7 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
 <meta name="author" content="Shawn Medero">	
+<meta name="fediverse:creator" content="@soypunk@friend.camp">
 
 {{- with or .Title site.Title site.Params.title | plainify }}
 <meta property="og:title" itemprop="name" content="{{ . }}">
